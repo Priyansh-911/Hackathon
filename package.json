@@ -9,6 +9,9 @@
   "author": "Priyansh",
   "license": "ISC",
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.11.2",
     "axios": "^1.2.1",
     "color": "^4.2.3",
     "cors": "^2.8.5",
@@ -20,8 +23,7 @@
     "react-router-dom": "^6.6.1"
   },
   "devDependencies": {
-    "concurrently":"^7.6.0",
-    "nodemon":"^2.0.20"
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
   }
-
 }
