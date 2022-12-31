@@ -4,6 +4,7 @@ import ShoppingCardIcon from "@mui/icons-material/ShoppingCart";
 import PersonIcon from "@mui/icons-material/Person";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useNavigate } from "react-router-dom";
+import { Component } from "react";
 
 export default function() {
     return (
