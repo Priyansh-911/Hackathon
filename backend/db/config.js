@@ -2,5 +2,5 @@
 
 const mongoose = require("mongoose");
 
-const url = 
-mongoose.connect(url);
+const url =//localhost:27017/hackathon
+mongoose.connect("mongodb://localhost:27017/hackathon");
