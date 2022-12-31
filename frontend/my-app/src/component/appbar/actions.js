@@ -3,8 +3,10 @@ import { MyList } from "../../styles/appbar";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonIcon from "@mui/icons-material/Person";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import { useNavigate } from "react-router-dom";
 
 export default function() {
+  let navigate= useNavigate();
     return (
         <MyList type="row">
                 <ListItemButton>
@@ -34,6 +36,9 @@ export default function() {
               sx={{
                   justifyContent: "center",
               }} 
+              onClick={() =>{
+                  navigate("/login");
+              }}
             >
                 <ListItemIcon
                   sx={{
@@ -43,6 +48,7 @@ export default function() {
                 >
                     <PersonIcon />
                 </ListItemIcon>
+                
                 
             </ListItemButton>
             <Divider orientation="vertical" flexItem/>
