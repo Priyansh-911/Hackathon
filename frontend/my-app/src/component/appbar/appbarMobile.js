@@ -1,3 +1,25 @@
+import { IconButton } from "@mui/material";
+import { AppbarContainer, AppbarHeader } from "../../styles/appbar";
+import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
+import Actions from "./actions";
+
+
 export default function AppbarMobile ({ matches }) {
-    return <h1>Mobile</h1>;
+    return (
+        <AppbarContainer>
+            <IconButton>
+                <MenuIcon />
+
+              
+            </IconButton>
+            <AppbarHeader textAlign={"center"} variant="h5">
+                Scholarships
+            </AppbarHeader>
+            <IconButton>
+                <SearchIcon />
+            </IconButton>
+            <Actions matches={matches} />
+        </AppbarContainer>
+    );
 }

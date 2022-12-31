@@ -1,8 +1,11 @@
-import { Button } from '@mui/material';
-import { ThemeProvider, Container } from '@mui/system';
+import { Button, Container } from '@mui/material';
+import { ThemeProvider } from '@mui/system';
 import { useEffect } from 'react';
 import Appbar from './component/appbar';
 import theme from './styles/theme';
+import Banner from './component/banner/';
+import Promotions from './component/promotions';
+import Products from './component/products';
 
 function App() {
 
@@ -18,7 +21,10 @@ function App() {
      }} 
      >
       <Appbar/>
-       <Button variant='contained'>Test</Button>
+      <Banner/>
+      <Promotions/>
+      <Products/>
+       
      </Container> 
     </ThemeProvider>
        

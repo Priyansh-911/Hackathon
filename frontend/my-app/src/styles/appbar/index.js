@@ -17,9 +17,9 @@ export const AppbarContainer = styled(Box)(() => ({
 export const AppbarHeader =styled(Typography)(() => ({
      padding: '4px',
      flexGrow: 1,
-     fontSize: '4em',
-     fontFamily: '"Montez", "cursive"',
-     color: Colors.secondary,
+     fontSize: '2em',
+     fontFamily: '"Nunito"',
+     color:Colors.secondary,
 }));
 
 export const MyList = styled(List)(({ type }) => ({
@@ -28,3 +28,21 @@ export const MyList = styled(List)(({ type }) => ({
   justifyContent: "center",
   alignItems: "center",
 }));
+
+export const ActionIconsContainerMobile = styled(Box)(() => ({
+  display: 'felx',
+  background: Colors.shaft,
+  position: 'fixed',
+  bottom: 0,
+  left: 0,
+  width: '100%',
+  allignItems: 'center',
+  zIndex: 99,
+  borderTop: `1px solid ${Colors.border}`
+
+
+}));
+export const ActionIconsContainerDesktop= styled(Box)(() => ({
+  flexGrow: 0
+}));
+ 
