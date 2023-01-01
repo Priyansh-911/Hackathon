@@ -16,9 +16,6 @@ export default function AppbarMobile ({ matches }) {
             <AppbarHeader textAlign={"center"} variant="h5">
                 Scholarships
             </AppbarHeader>
-            <IconButton>
-                <SearchIcon />
-            </IconButton>
             <Actions matches={matches} />
         </AppbarContainer>
     );
