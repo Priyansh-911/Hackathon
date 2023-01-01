@@ -1,30 +1,20 @@
 import { Divider, ListItemButton, ListItemIcon } from "@mui/material";
 import { MyList } from "../../styles/appbar";
-import ShoppingCardIcon from "@mui/icons-material/ShoppingCart";
+import SearchIcon from "@mui/icons-material/Search";
 import PersonIcon from "@mui/icons-material/Person";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useNavigate } from "react-router-dom";
 import { Component } from "react";
 
 export default function() {
+  let navigate=useNavigate();
     return (
-      <Component>
         <MyList type="row">
-            <Divider orientation="vertical" flexItem/>
-            <ListItemButton
-              sx={{
-                  justifyContent: "center",
-              }} 
-            >   
-                <ListItemIcon
-                  sx={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                  }}
-                >
-                    <ShoppingCardIcon />
-                </ListItemIcon>
-            </ListItemButton>
+        <ListItemButton>
+                    <ListItemIcon>
+                        <SearchIcon/>
+                    </ListItemIcon>
+                </ListItemButton>
             <Divider orientation="vertical" flexItem/>
             <ListItemButton
               sx={{
@@ -64,6 +54,5 @@ export default function() {
             </ListItemButton>
             <Divider orientation="vertical" flexItem/>
         </MyList>
-        </Component>
     )
 }
