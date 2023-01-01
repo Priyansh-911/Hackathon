@@ -6,12 +6,13 @@ const app = express();
 app.use(express.json());
 
 app.post("/register", async (req,res)=>{
+    res.send("Api in progress...")
     let user = new user(req.body);
     let result = await user.save();
     res.send(result);
 })
 
-app.get("/scholarships/get", (req, res) => {
+app.get("/scholarships", (req, res) => {
     Products.find((err, data) => {
       if (err) {
         res.status(500).send(err);
@@ -21,6 +22,7 @@ app.get("/scholarships/get", (req, res) => {
     });
   });
 
-app.listen(5000);
+
+app.listen(3000);
 
 
