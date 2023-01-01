@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-
+mongoose.set('strictQuery', false);
 
 
 // this is a sample schema
