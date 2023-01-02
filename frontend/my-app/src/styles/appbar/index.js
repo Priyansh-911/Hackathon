@@ -1,8 +1,9 @@
 import { Box } from "@mui/system";
 import { styled } from "@mui/material/styles";
-import { List , Typography } from "@mui/material";
+import { IconButton, List , Typography } from "@mui/material";
 import { Colors } from "../theme";
 import "@fontsource/montez"
+import zIndex from "@mui/material/styles/zIndex";
 
 export const AppbarContainer = styled(Box)(() => ({
     display: 'flex',
@@ -45,4 +46,11 @@ export const ActionIconsContainerMobile = styled(Box)(() => ({
 export const ActionIconsContainerDesktop= styled(Box)(() => ({
   flexGrow: 0
 }));
- 
+
+export const  DrawerCloseButton = styled(IconButton)(() =>({
+position: 'absolute',
+top: 10,
+left: '350px',
+zIndex: 1999
+
+}));

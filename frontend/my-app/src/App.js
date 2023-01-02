@@ -8,6 +8,8 @@ import Banner from './component/banner';
 
 import Footer from './component/footer';
 import { Box, Typography, Container } from '@mui/material';
+import Home from './Home';
+import { UIProvider } from './component/context';
 
 
 function App() {
@@ -24,19 +26,21 @@ function App() {
           sx={{
             background: '#fff'
           }}
-        >
+        > 
+
+        
           <Appbar />
-         
           
-          
+        
         </Container>
       </ThemeProvider>
+      
         
           
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path="/login" element={<SignInOutContainer/>}/>
-            <Route path="/dashboard/student" element={<Student/>}/>
+            
           </Routes>
         
 
