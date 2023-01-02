@@ -6,6 +6,8 @@ import Footer from './component/footer';
 import { Box, Typography, Container } from '@mui/material';
 import Products from './component/products';
 import Promotions from './component/promotions';
+import AppDrawer from './component/drawer';
+import { UIProvider } from './component/context';
 
 const Home = () => {
   return (
@@ -16,6 +18,7 @@ const Home = () => {
             background: '#fff'
           }}
         >
+          {/* <UIProvider> */}
           <Banner/>
           <Promotions/>
           <Box display="flex" justifyContent={"center"} sx={{ p: 4}}>
@@ -26,6 +29,8 @@ const Home = () => {
 
           <Products />
           <Footer />
+          {/* <AppDrawer/>
+          </UIProvider> */}
           
         </Container>
       </ThemeProvider>
