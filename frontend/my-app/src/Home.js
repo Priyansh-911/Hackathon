@@ -18,7 +18,7 @@ const Home = () => {
             background: '#fff'
           }}
         >
-          <UIProvider>
+          {/* <UIProvider> */}
           <Banner/>
           <Promotions/>
           <Box display="flex" justifyContent={"center"} sx={{ p: 4}}>
@@ -29,8 +29,8 @@ const Home = () => {
 
           <Products />
           <Footer />
-          <AppDrawer/>
-          </UIProvider>
+          {/* <AppDrawer/>
+          </UIProvider> */}
           
         </Container>
       </ThemeProvider>

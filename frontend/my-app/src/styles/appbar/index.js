@@ -10,13 +10,14 @@ export const AppbarContainer = styled(Box)(() => ({
     marginTop: 4,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: '2px 8px'
+    // padding: '2px 8px',
+    padding: '0px'
 }));
 
 
 //header
 export const AppbarHeader =styled(Typography)(() => ({
-     padding: '4px',
+    //  padding: '4px',
      flexGrow: 1,
      fontSize: '2em',
      fontFamily: '"Nunito"',
@@ -31,9 +32,9 @@ export const MyList = styled(List)(({ type }) => ({
 }));
 
 export const ActionIconsContainerMobile = styled(Box)(() => ({
-  display: 'felx',
+  display: 'flex',
   background: Colors.shaft,
-  position: 'fixed',
+  position: 'absolute',
   bottom: 0,
   left: 0,
   width: '100%',
