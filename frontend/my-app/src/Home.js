@@ -6,6 +6,7 @@ import Footer from './component/footer';
 import { Box, Typography, Container } from '@mui/material';
 import Products from './component/products';
 import Promotions from './component/promotions';
+import AppDrawer from './component/drawer';
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
 
           <Products />
           <Footer />
+          <AppDrawer/>
           
         </Container>
       </ThemeProvider>

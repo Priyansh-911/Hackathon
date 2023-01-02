@@ -8,9 +8,6 @@ import Banner from './component/banner';
 
 import Footer from './component/footer';
 import { Box, Typography, Container } from '@mui/material';
-import Products from './component/products';
-import Promotions from './component/promotions';
-import AppDrawer from './component/drawer';
 
 
 function App() {
@@ -29,24 +26,17 @@ function App() {
           }}
         >
           <Appbar />
-          <Banner/>
-          <Promotions/>
-          <Box display="flex" justifyContent={"center"} sx={{ p: 4}}>
-            <Typography variant="h4">Scholarships</Typography>
-
-             </Box>
-
-
-          <Products />
-          <Footer />
-          <AppDrawer/>
+         
+          
           
         </Container>
       </ThemeProvider>
         
           
           <Routes>
+            <Route path='/' element={<Home/>}/>
             <Route path="/login" element={<SignInOutContainer/>}/>
+            <Route path="/dashboard/student" element={<Student/>}/>
           </Routes>
         
 
