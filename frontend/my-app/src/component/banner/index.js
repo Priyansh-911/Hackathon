@@ -17,7 +17,7 @@ export default function Banner() {
                     Scholarships Available
                 </BannerTitle>
                 <BannerDescription variant="subtitle">
-                    Welocme to this site.Very happy to see you all here.Hope you will find your way out of this..
+                    Welocme to this site.Very happy to see you all here. Hope you will find your way out of this..
                 </BannerDescription>
 
 
