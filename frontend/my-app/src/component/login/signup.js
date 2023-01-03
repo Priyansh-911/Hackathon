@@ -1,5 +1,5 @@
 import { Avatar, Button,  Grid, Paper, TextField, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -9,6 +9,18 @@ import FormLabel from '@mui/material/FormLabel';
 import MenuItem from '@mui/material/MenuItem';
 
 const Signup=()=>{
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [gender, setGender] = useState("");
+    const [state, setState] = useState("");
+    const [pass, setPass] = useState("");
+
+    const collectData=()=>{
+        console.log(name,email,pass);
+    }
+
+
+
     const paperStyle={padding:20, width:350 , margin:"0 auto"}
     const headerStyle={margin:0}
     const avatarStyle={backgroundColor:'rgb(8 154 214)'}
@@ -47,8 +59,8 @@ const Signup=()=>{
                     <Typography variant="caption">Please fill this form to create an account!</Typography>
                 </Grid>
                 <form>
-                    <TextField label="Name" margin="dense" fullWidth/>
-                    <TextField label="E-mail" margin="dense" fullWidth/>
+                    <TextField label="Name" margin="dense" value={name} onChange={(e)=>setName(e.target.value)} fullWidth/>
+                    <TextField label="E-mail" margin="dense" value={email} onChange={(e)=>setEmail(e.target.value)} fullWidth/>
                     <FormControl style={marginTop}>
                         <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
                         <RadioGroup
@@ -81,13 +93,13 @@ const Signup=()=>{
                         fullWidth
                     >
                         {states.map((option) => (
-                            <MenuItem key={option.value} value={option.value}>
+                            <MenuItem key={option.value} value={option.label} onChange={(e)=>setState(e.target.value)} >
                                 {option.label}
                             </MenuItem>
                         ))}
                     </TextField>
-                    <TextField label="Password" type="password" margin="dense" fullWidth/>
-                    <Button type='submit' color='info' variant='contained' style={btnstyle} fullWidth>Sign Up</Button>
+                    <TextField label="Password" type="password" margin="dense" value={pass} onChange={(e)=> setPass(e.target.value)} fullWidth/>
+                    <Button type='submit' color='info' variant='contained' onClick={collectData} style={btnstyle} fullWidth>Sign Up</Button>
                 </form>
             </Paper>
         </Grid>
