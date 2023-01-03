@@ -3,15 +3,16 @@ import { AppbarContainer, AppbarHeader } from "../../styles/appbar";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import Actions from "./actions";
-// import { useUIContext } from "../context";
+import { useUIContext } from "../context";
 
 
 export default function AppbarMobile ({ matches }) {
-    // const {setDrawerOpen} = useUIContext()
+    // const { setDrawerOpen } = useUIContext()
     return (
         <AppbarContainer>
             <IconButton >
-                {/* onClick={()=> setDrawerOpen(true)}> */}
+            {/* // onClick={()=> setDrawerOpen(true)}> */}
+
                 <MenuIcon />
 
               

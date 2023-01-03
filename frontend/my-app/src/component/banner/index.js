@@ -10,18 +10,12 @@ export default function Banner() {
 
     return(
         <BannerContainer>
-            <BannerImage src="/image/banner/dcp.png"/>
-            <BannerContent>
-                {/* <Typography variant="h6">Scholarships</Typography> */}
-                {/* <BannerTitle variant="h2">
-                    Scholarships Available
-                </BannerTitle> */}
-                {/* <BannerDescription variant="subtitle">
-                    Welocme to this site.Very happy to see you all here. Hope you will find your way out of this..
-                </BannerDescription> */}
+            <BannerImage src="/image/banner/dpp.png"/>
+             {/* <BannerContent>
+                
 
 
-            </BannerContent>
+            </BannerContent> */}
     
         </BannerContainer>
     );

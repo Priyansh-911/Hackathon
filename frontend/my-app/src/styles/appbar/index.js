@@ -11,7 +11,7 @@ export const AppbarContainer = styled(Box)(() => ({
     justifyContent: 'center',
     alignItems: 'center',
     // padding: '2px 8px',
-    padding: '0px'
+    // padding: '0px'
 }));
 
 
@@ -51,7 +51,7 @@ export const ActionIconsContainerDesktop= styled(Box)(() => ({
 export const  DrawerCloseButton = styled(IconButton)(() =>({
 position: 'absolute',
 top: 10,
-left: '350px',
+left: '250px',
 zIndex: 1999
 
 }));

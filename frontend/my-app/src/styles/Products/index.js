@@ -11,18 +11,19 @@ export const Product = styled(Box)(({theme}) => ({
     alignItems: 'center',
     felxDirection: 'column',
     [theme.breakpoints.up('md')]: {
-        position: 'relative'
+        position: 'absolute'
     }
 }));
  
 export const ProductImage = styled('img')(({src,theme}) => ({
     src: `url($(src))`,
     width: '100%',
-    background: Colors.light_gray,
-    padding: '10px',
+    background: Colors.light,
+     padding: '5px',
     [theme.breakpoints.down('md')]: {
-        width: '80%',
-        padding: '24px'
+        width: '120%',
+        // height:'100%'
+        padding: '30px'
     }
 }));
 
@@ -41,7 +42,7 @@ export const ProductFavButton = styled(ProductActionButton)(({ isfav,theme}) => 
 }));
 
 export const ProductMetaWrapper = styled(Box)(({ theme })  => ({
- padding: 4,
+//  padding: 4,
  display: "flex",
  felxDirection: "column",
  alignItems:"center",

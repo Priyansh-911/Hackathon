@@ -7,8 +7,8 @@ import { Box, Typography, Container } from '@mui/material';
 import Products from './component/products';
 import Promotions from './component/promotions';
 import AppDrawer from './component/drawer';
-import { UIProvider } from './component/context';
-
+import { UIProvider } from "./component/context";
+import Fdonor from './component/fdonor';
 const Home = () => {
   return (
     <ThemeProvider theme={theme}>
@@ -18,19 +18,21 @@ const Home = () => {
             background: '#fff'
           }}
         >
-          {/* <UIProvider> */}
+          <UIProvider>
           <Banner/>
           <Promotions/>
-          <Box display="flex" justifyContent={"center"} sx={{ p: 4}}>
-            <Typography variant="h4">Scholarships</Typography>
+          {/* <Box display="flex" justifyContent={"center"} sx={{ p: 4}}>
+            <Typography variant="h4"></Typography>
 
-             </Box>
+             </Box> */}
 
 
           <Products />
+          <Fdonor/>
           <Footer />
-          {/* <AppDrawer/>
-          </UIProvider> */}
+         <AppDrawer/>
+          </UIProvider> 
+          
           
         </Container>
       </ThemeProvider>

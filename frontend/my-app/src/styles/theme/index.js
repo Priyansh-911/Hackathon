@@ -10,7 +10,7 @@ export const Colors = {
     dark: "#0e1b20",
     light: "#aaa",
     muted: "#abafb3",
-    border: "FFB26B",
+    // border: "FFB26B",
     inverse: "#2F3D4A",
     shaft: "#333",
     ///////////////
@@ -28,13 +28,13 @@ export const Colors = {
   };
   const theme = createTheme({
     palette: {
-        primary: {
-            main: Colors.primary
+        // primary: {
+    //         main: Colors.primary
         },
-        secondary: {
-            main: Colors.secondary
-        }
-    },
+    //     secondary: {
+    //         main: Colors.secondary
+        
+    // },
 
     components: {
         MuiButton: {
@@ -63,6 +63,7 @@ export const Colors = {
 
         //     }
         // },
+        
     
     },
   });
