@@ -8,12 +8,12 @@ const userSchema = new Schema({
     name : String,
     email : String,
     gender : String,
-    DOB : String,
-    state : String,
-    std10 : Number,
-    std12 : Number,
-    current : String,
-    currented : String
+    DOB : Date
+    // state : String,
+    // std10 : Number,
+    // std12 : Number,
+    // current : String,
+    // currented : String
     
 });
 
