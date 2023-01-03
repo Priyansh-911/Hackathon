@@ -1,5 +1,5 @@
 import {Box, Grid, List, ListItemText, Typography} from "@mui/material";
-import { FooterTitle} from "../../styles/footer";
+import { FooterTitle } from "../../styles/footer";
 import { Colors } from "../../styles/theme";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
