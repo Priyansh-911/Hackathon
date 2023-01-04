@@ -54,27 +54,6 @@ export default function Footer() {
                         </List>
 
             </Grid>
-            <Grid item md={6} lg={2}>
-             <FooterTitle variant="body1">My Account</FooterTitle> 
-
-             <List>
-                           <ListItemText>
-                            <Typography lineHeight={2} variant="caption2">
-                                Login
-                            </Typography>
-                            </ListItemText> 
-                            <ListItemText>
-                            <Typography lineHeight={2} variant="caption2">
-                                Scholarships
-                            </Typography>
-                            </ListItemText> 
-                            <ListItemText>
-                            <Typography lineHeight={2} variant="caption2">
-                                My Account
-                            </Typography>
-                            </ListItemText> 
-                        </List>  
-            </Grid>
             
         </Grid> 
        </Box>
