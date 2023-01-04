@@ -36,7 +36,7 @@ export default function() {
                   justifyContent: "right",
               }} 
               onClick={() =>{
-                  navigate("/login");
+                  navigate("/register");
               }}
             >
                 <ListItemIcon

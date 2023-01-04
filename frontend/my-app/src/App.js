@@ -10,6 +10,8 @@ import Footer from './component/footer';
 import { Box, Typography, Container } from '@mui/material';
 import Home from './Home';
 import { UIProvider } from './component/context';
+import Student from './dashboard/Student';
+import Donor from './dashboard/Donor';
 
 
 function App() {
@@ -40,7 +42,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path="/register" element={<SignInOutContainer/>}/>
-            
+            <Route path='/dashboard/student' element={<Student/>}/>
+            <Route path='/dashboard/donor' element={<Donor/>}/>
           </Routes>
         
 
