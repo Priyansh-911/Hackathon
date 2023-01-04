@@ -5,8 +5,8 @@ import {Colors} from "../theme";
 
 
 export const BannerContainer =styled(Box)(({theme}) => ({
-    display: 'flex',
-    justifyContent: 'center',
+    // display: 'flex',
+    // justifyContent: '',
     width: '100%',
     height: 'screen',
     // padding : '0px 0px',
@@ -32,7 +32,7 @@ export const BannerContent = styled(Box)(() => ({
     flexDirection: 'column',
     justifyContent: 'center',
      maxwidth: '100%',
-    padding: '30px'
+    // padding: '30px'
 }));
 // export const BannerTitle = styled(Typography)(({theme})=> ({
 //     lineHeight: 1.5,

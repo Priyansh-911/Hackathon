@@ -18,7 +18,9 @@ export default function ImgMediaCard() {
             // sx={{margin: '1px 2px 10px '}}
             >
              <Grid item xs={5}>
-             <Card sx={{ minWidth: 275 }}>
+             <Card sx={{ minWidth: 275 }} style={{border:"none", boxShadow:"none"}}>
+             
+
       <CardContent>
         <img src="https://static.theprint.in/wp-content/uploads/2019/03/Azim-Premji-image.jpg?compress=true&quality=80&w=376&dpr=2.6 " alt="indu" style={{ width: "100%", height: "40vh" }}></img>
         {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -30,7 +32,7 @@ export default function ImgMediaCard() {
     </Card>
               </Grid> 
               <Grid item xs={7}>
-             <Card sx={{ minWidth: 275 }}>
+             <Card sx={{ minWidth: 275 }}  style={{border:"none", boxShadow:"none"}}>
       <CardContent>
       <Typography gutterBottom variant="h4" component="div">
           
@@ -70,7 +72,7 @@ export default function ImgMediaCard() {
     </Card>
              </Grid>  */}
               <Grid item xs={7}>
-             <Card sx={{ minWidth: 275 }}>
+             <Card sx={{ minWidth: 275 }}  style={{border:"none", boxShadow:"none",background:"#f5e29a"}}>
       <CardContent>
       <Typography gutterBottom variant="h4" component="div">
          RATAN TATA
@@ -85,7 +87,7 @@ export default function ImgMediaCard() {
 
 
               <Grid item xs={5}>
-             <Card sx={{ minWidth: 275 }}>
+             <Card sx={{ minWidth: 275 }}  style={{border:"none", boxShadow:"none"}}>
       <CardContent>
         <img src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcS1E3gd3rMtzcBiXVRWiyDoF5J1sqpaSpkcW005DZYuU0o_RVwbNPvo9v3ZZJ4ZgEcQQkE_NKCqTt1tayI" alt="indu" style={{ width: "100%", height: "40vh" }}></img>
          {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>

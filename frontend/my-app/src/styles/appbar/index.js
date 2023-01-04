@@ -35,12 +35,12 @@ export const ActionIconsContainerMobile = styled(Box)(() => ({
   display: 'flex',
   background: Colors.shaft,
   position: 'absolute',
-  bottom: 0,
-  left: 0,
+  //bottom: 0,
+  //left: 0,
   width: '100%',
   allignItems: 'center',
   zIndex: 99,
-  borderTop: `1px solid ${Colors.border}`
+  // borderTop: `1px solid ${Colors.border}`
 
 
 }));

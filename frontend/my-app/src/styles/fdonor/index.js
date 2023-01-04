@@ -10,6 +10,8 @@ export const Product = styled(Box)(({theme}) => ({
     justifyContent: 'center',
     alignItems: 'center',
     felxDirection: 'column',
+    border:'none',
+    boxShadow:'none',
     [theme.breakpoints.up('md')]: {
         position: 'absolute'
     }

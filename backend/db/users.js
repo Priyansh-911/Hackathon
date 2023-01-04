@@ -5,16 +5,12 @@ const mongoose = require("mongoose");
 // Note to lakshay == isko apni table ke hisaab se edit krlio theseee things should match the ones in table
 var Schema= mongoose.Schema;
 const userSchema = new Schema({
-    name : String,
-    email : String,
-    gender : String,
-    DOB : Date
-    // state : String,
-    // std10 : Number,
-    // std12 : Number,
-    // current : String,
-    // currented : String
-    
+    name: String,
+    email: String,
+    gender: String,
+    state: String,
+    choice: String,
+    password:String
 });
 
 

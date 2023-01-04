@@ -26,7 +26,7 @@ function App() {
         <Container
           maxWidth="xl"
           sx={{
-            background: '#fff'
+            background: '#949aa8'
           }}
         > 
 

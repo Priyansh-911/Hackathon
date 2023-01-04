@@ -14,6 +14,7 @@ import Collapse from '@mui/material/Collapse';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Link as RouterLink, Router } from 'react-router-dom';
+import Link from '@mui/material/Link';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -72,12 +73,12 @@ export default function Products() {
        
       
      
-     
+        <Link href="https://github.com/"> INDUSIND FOUNDATION SCHOLARSHIP</Link>
 
 
- <Button href="https://github.com/" variant="contained">
+ {/* <Button href="https://github.com/" variant="contained">
    INDUSIND FOUNDATION SCHOLARSHIP
-   </Button>
+   </Button> */}
 
 
 </CardContent>
