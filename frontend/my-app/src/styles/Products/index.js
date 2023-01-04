@@ -8,7 +8,7 @@ import { slideInBottom,slideInRight } from "../../animation";
 export const Product = styled(Box)(({theme}) => ({
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
+    textalignItems: 'center',
     felxDirection: 'column',
     [theme.breakpoints.up('md')]: {
         position: 'absolute'

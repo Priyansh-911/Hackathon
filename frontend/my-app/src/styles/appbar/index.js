@@ -18,15 +18,15 @@ export const AppbarContainer = styled(Box)(() => ({
 //header
 export const AppbarHeader =styled(Typography)(() => ({
     //  padding: '4px',
-     flexGrow: 1,
-     fontSize: '2em',
+     flexGrow: 10,
+     fontSize: '3em',
      fontFamily: '"Nunito"',
      color:Colors.secondary,
 }));
 
 export const MyList = styled(List)(({ type }) => ({
     display: type === "row" ? "flex" : "block",
-    flexGrow: 3,
+    flexGrow: 10,
   justifyContent: "center",
   alignItems: "center",
 }));
@@ -45,13 +45,13 @@ export const ActionIconsContainerMobile = styled(Box)(() => ({
 
 }));
 export const ActionIconsContainerDesktop= styled(Box)(() => ({
-  flexGrow: 0
+  flexGrow: 5
 }));
 
 export const  DrawerCloseButton = styled(IconButton)(() =>({
 position: 'absolute',
 top: 10,
-left: '250px',
+left: '200px',
 zIndex: 1999
 
 }));

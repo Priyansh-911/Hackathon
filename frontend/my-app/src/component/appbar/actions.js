@@ -42,7 +42,7 @@ export default function() {
                 <ListItemIcon
                   sx={{
                     display: 'absolute',
-                    justifyContent: 'right',
+                    justifyContent: 'center',
                   }}
                 >
                     <PersonIcon />
