@@ -26,7 +26,6 @@ const Info = () => {
                       <TextField label="Enter your caste" margin="dense" fullWidth />
                       <TextField label="Enter your 10th passing year" margin="dense" fullWidth />
                       <TextField label="Enter your 12th passing year" margin="dense" fullWidth />
-                      <TextField label="Enter your place of origin" margin="dense" fullWidth />
                       <TextField label="Enter your date of birth(DD/MM/YYYY)" margin="dense" fullWidth />
                       <Button type='submit' color='info' variant='contained' style={btnstyle} fullWidth
                           onClick={() => {

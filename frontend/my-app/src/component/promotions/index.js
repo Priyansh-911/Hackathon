@@ -3,6 +3,7 @@ import {Box} from "@mui/system";
 import { useEffect, useState,useRef } from "react";
 import { Slide } from "@mui/material";
 
+
 const messages = [
 "Applications for Scholarships are NOW OPEN!",
 "Students can apply scholarships from 20th of january,2023.",
