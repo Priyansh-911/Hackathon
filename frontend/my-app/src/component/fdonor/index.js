@@ -14,10 +14,11 @@ export default function ImgMediaCard() {
         <h1>Popular Donors</h1>
         <Grid
             container spacing={12}
+            marginBottom
            // justifyContent={"center"}
             // sx={{margin: '1px 2px 10px '}}
             >
-             <Grid item xs={5}>
+             <Grid item xs={5} marginBottom={4} >
              <Card sx={{ minWidth: 275 }} style={{border:"none", boxShadow:"none"}}>
              
 
@@ -31,7 +32,7 @@ export default function ImgMediaCard() {
       </CardContent>
     </Card>
               </Grid> 
-              <Grid item xs={7}>
+              <Grid item xs={7} margin='4'>
              <Card sx={{ minWidth: 275 }}  style={{border:"none", boxShadow:"none",background:"#f5e29a"}}>
       <CardContent>
       <Typography gutterBottom variant="h4" component="div">
@@ -39,7 +40,7 @@ export default function ImgMediaCard() {
       Azim Prem JI
         </Typography>
         <Typography variant="body2" color="text.secondary" alt="indu" style={{ width: "100%", height: "30vh" }}>
-        Azim Premji is chairman of Wipro. His annual donations stood at Rs 484 crore. Premji is also the only living Indian to feature in the EdelGive Hurun Philanthropists of the Century list.
+          Azim Premji is chairman of Wipro. His annual donations stood at Rs 484 crore. Premji is also the only living Indian to feature in the EdelGive Hurun Philanthropists of the Century list.
         </Typography>
       </CardContent>
     </Card>
@@ -55,6 +56,7 @@ export default function ImgMediaCard() {
        
       <Grid
             container spacing={12}
+            marginBottom={4}
            // justifyContent={"center"}
             // sx={{margin: '1px 2px 10px '}}
             >
@@ -76,8 +78,8 @@ export default function ImgMediaCard() {
       <Typography gutterBottom variant="h4" component="div">
          RATAN TATA
         </Typography>
-        <Typography variant="body2" color="text.secondary" alt="indu" style={{ width: "100%", height: "35vh" }}>
-        Sir Ratan Tata Fund offers excellent opportunities for students without worrying about monetary difficulties. Sir Ratan Tata Scholarship is exclusively for Indians are who looking for a year master's course at the University of Liverpool. The scholarship covers the tuition fees and living expenses of the selected students. The scholarship is given only once.
+        <Typography variant="body2" color="text.secondary" alt="indu" style={{ width: "100%", height: "33vh" }}>
+        With donations worth $102.4 billion, India’s pioneer industrialist and Tata Group founder Jamsetji Nusserwanji Tata is the world’s biggest philanthropist of the last century, much ahead of Bill and Melinda Gates, who came in second.
         </Typography>
       </CardContent>
     </Card>
