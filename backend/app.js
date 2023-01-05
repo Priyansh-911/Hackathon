@@ -3,6 +3,8 @@ const cors = require("cors");
 require('./db/config');
 const Users = require("./db/users");
 const scholarships  = require("./db/scholarships");
+const commentDB = require("./db/commentsDB");
+
 const app = express();
 
 app.use(express.json());
@@ -24,6 +26,13 @@ app.post("/register", async (req,res)=>{
     let user = new Users(req.body);
     let result = user.save();
 });
+
+app.post("/dashboard/student", async (req,res)=>{
+    res.status(200).send("progress");
+    let user = new commentDB(req.body);
+    let result = user.save();
+});
+
 
 // app.get("/scholarships", (req, res) => {
 //     Products.find((err, data) => {

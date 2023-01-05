@@ -5,6 +5,23 @@ import { useNavigate } from "react-router-dom";
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 
 function Student()  {
+
+
+  const [comment,setComment] = useState("");
+
+  const data = async () => {
+    console.warn(comment);
+    const result = await fetch('https://localhost:3000/dashboard/student', {
+      method:'post',
+      body : JSON.stringify({comment}),
+      headers:{
+        'Content-Type':'application/json'
+      },
+    });
+    console.warn(await result.json());
+  }
+
+
   let navigate=useNavigate();
   const btnstyle={margin:"10px 0"}
   const [scholarships,setscholarships]=useState("");
@@ -37,10 +54,12 @@ function Student()  {
           label="Type here"
           multiline
           rows={5}
+          value = {comment}
+          onChange = {(e)=> setComment(e.target.value)}
           margin="dense"
           fullWidth
         />
-        <Button type='submit' color='info' variant='contained' style={btnstyle} >Submit</Button>
+        <Button type='submit' color='info' variant='contained' style={btnstyle} onClick={data} >Submit</Button>
         </Box>
         
       </div>

@@ -16,7 +16,7 @@ const Signup=()=>{
     const [pass, setPass] = useState("");
 
     const collectData=()=>{
-        console.log(name,email,pass);
+        console.warn(name,email,pass);
     }
 
 
@@ -58,7 +58,7 @@ const Signup=()=>{
                     <h2 style={headerStyle}>Sign up</h2>
                     <Typography variant="caption">Please fill this form to create an account!</Typography>
                 </Grid>
-                <form>
+                <form id="signup">
                     <TextField label="Name" margin="dense" value={name} onChange={(e)=>setName(e.target.value)} fullWidth/>
                     <TextField label="E-mail" margin="dense" value={email} onChange={(e)=>setEmail(e.target.value)} fullWidth/>
                     <FormControl style={marginTop}>
@@ -94,7 +94,7 @@ const Signup=()=>{
                         fullWidth
                     >
                         {states.map((option) => (
-                            <MenuItem key={option.value} Value={option.label}  >
+                            <MenuItem key={option.value} value={option.label}  >
                                 {option.label}
                             </MenuItem>
                         ))}
