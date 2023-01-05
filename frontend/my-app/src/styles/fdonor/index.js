@@ -20,12 +20,13 @@ export const Product = styled(Box)(({theme}) => ({
 export const ProductImage = styled('img')(({src,theme}) => ({
     src: `url($(src))`,
     width: '100%',
+    height:'30vh',
     // background: Colors.light,
-     padding: '5px',
+    //  padding: '5px',
     [theme.breakpoints.down('md')]: {
         width: '120%',
         // height:'100%'
-        padding: '24px'
+        // padding: '24px'
     }
 }));
 

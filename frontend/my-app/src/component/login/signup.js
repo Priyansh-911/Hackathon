@@ -12,7 +12,7 @@ const Signup=()=>{
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [gender, setGender] = useState("");
-    const [state, setState] = useState("");
+    const [Value, setValue] = useState("");
     const [pass, setPass] = useState("");
 
     const collectData=()=>{
@@ -84,16 +84,17 @@ const Signup=()=>{
                             <FormControlLabel value="student" control={<Radio />} label="Student" />
                         </RadioGroup>
                     </FormControl>
-                    <TextField
+                    <TextField 
                         id="outlined-select-state"
                         select
                         label="Select"
                         helperText="Please select your state"
                         margin="dense"
+                        onChange={(e) => setState(e.target.value)}
                         fullWidth
                     >
                         {states.map((option) => (
-                            <MenuItem key={option.value} value={option.label} onChange={(e)=>setState(e.target.value)} >
+                            <MenuItem key={option.value} Value={option.label}  >
                                 {option.label}
                             </MenuItem>
                         ))}

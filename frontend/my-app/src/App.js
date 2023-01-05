@@ -24,7 +24,7 @@ function App() {
     
       <ThemeProvider theme={theme}>
         <Container
-          maxWidth="xl"
+          maxWidth="100%"
           sx={{
             background: '#949aa8'
           }}

@@ -13,9 +13,9 @@ app.get("/" , (req,res)=>{
 });
 
 
-// app.get("/register", async (req,res)=>{
-//     res.status(200).send("this is get...");
-// });
+app.get("/register", async (req,res)=>{
+    res.status(200).send("this is get...");
+});
 
 
 
