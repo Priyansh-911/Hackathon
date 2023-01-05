@@ -90,7 +90,7 @@ const Signup=()=>{
                         label="Select"
                         helperText="Please select your state"
                         margin="dense"
-                        onChange={(e) => setState(e.target.value)}
+                        
                         fullWidth
                     >
                         {states.map((option) => (
