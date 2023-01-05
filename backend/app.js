@@ -28,9 +28,9 @@ app.post("/register", async (req,res)=>{
 });
 
 app.post("/dashboard/student", async (req,res)=>{
-    res.status(200).send("progress");
-    let user = new commentDB(req.body);
-    let result = user.save();
+    res.status(200).send("in progress......");
+    let comment = new commentDB(req.body);
+    let resultss = comment.save();
 });
 
 

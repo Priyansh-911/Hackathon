@@ -10,15 +10,16 @@ function Student()  {
   const [comment,setComment] = useState("");
 
   const data = async () => {
-    console.warn(comment);
-    const result = await fetch('https://localhost:3000/dashboard/student', {
+    // console.warn(comment);
+    let result = await fetch('http://localhost:3000/dashboard/student', {
       method:'post',
       body : JSON.stringify({comment}),
       headers:{
-        'Content-Type':'application/json'
+        'Content-Type':'text/json'
       },
     });
-    console.warn(await result.json());
+    result = result.json();
+    console.warn(result);
   }
 
 
