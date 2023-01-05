@@ -12,7 +12,7 @@ const Signup=()=>{
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [gender, setGender] = useState("");
-    const [Value, setValue] = useState("");
+    // const [Value, setValue] = useState("");
     const [pass, setPass] = useState("");
 
     const collectData=()=>{
@@ -68,7 +68,7 @@ const Signup=()=>{
                             name="radio-buttons-group"
                             style={{display:"initial"}}
                         >
-                            <FormControlLabel value="female" control={<Radio />} label="Female" />
+                            <FormControlLabel value="female" control={<Radio />}  label="Female" />
                             <FormControlLabel value="male" control={<Radio />} label="Male" />
                             <FormControlLabel value="other" control={<Radio />} label="Other" />
                         </RadioGroup>
@@ -90,11 +90,11 @@ const Signup=()=>{
                         label="Select"
                         helperText="Please select your state"
                         margin="dense"
-                        onChange={(e) => setState(e.target.value)}
+                        // onChange={(e) => setState(e.target.value)}
                         fullWidth
                     >
                         {states.map((option) => (
-                            <MenuItem key={option.value} Value={option.label}  >
+                            <MenuItem key={option.value} value={option.label}  >
                                 {option.label}
                             </MenuItem>
                         ))}
