@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { useNavigate } from "react-router-dom";
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import Footer from '../component/footer';
 
 function Student()  {
   let navigate=useNavigate();
@@ -42,7 +43,7 @@ function Student()  {
         />
         <Button type='submit' color='info' variant='contained' style={btnstyle} >Submit</Button>
         </Box>
-        
+        <Footer/>
       </div>
     </main>
   )

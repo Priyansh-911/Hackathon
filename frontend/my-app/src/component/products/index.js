@@ -58,6 +58,7 @@ export default function Products() {
             <Grid
             container spacing={2}
            justifyContent={"center"}
+           marginBottom={4}
             // sx={{margin: '0px 0px 0px '}}
             >
              <Grid item xs={4}>
@@ -117,6 +118,7 @@ export default function Products() {
        
       <Grid
             container spacing={2}
+            marginBottom={4}
            // justifyContent={"center"}
             // sx={{margin: '1px 2px 10px '}}
             >
