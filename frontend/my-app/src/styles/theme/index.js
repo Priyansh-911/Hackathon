@@ -2,7 +2,7 @@ import { createTheme, lighten } from "@mui/material/styles";
 
 export const Colors = {
     primary: "#FFB26B",
-    secondary: "#d1adcc",
+    secondary: "#f5e29a",
     success: "#4CAF50",
     info: "#00a2ff",
     danger: "#FF5722",

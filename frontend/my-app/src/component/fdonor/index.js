@@ -32,15 +32,14 @@ export default function ImgMediaCard() {
     </Card>
               </Grid> 
               <Grid item xs={7}>
-             <Card sx={{ minWidth: 275 }}  style={{border:"none", boxShadow:"none"}}>
+             <Card sx={{ minWidth: 275 }}  style={{border:"none", boxShadow:"none",background:"#f5e29a"}}>
       <CardContent>
       <Typography gutterBottom variant="h4" component="div">
           
       Azim Prem JI
         </Typography>
         <Typography variant="body2" color="text.secondary" alt="indu" style={{ width: "100%", height: "30vh" }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+        Azim Premji is chairman of Wipro. His annual donations stood at Rs 484 crore. Premji is also the only living Indian to feature in the EdelGive Hurun Philanthropists of the Century list.
         </Typography>
       </CardContent>
     </Card>
@@ -78,8 +77,7 @@ export default function ImgMediaCard() {
          RATAN TATA
         </Typography>
         <Typography variant="body2" color="text.secondary" alt="indu" style={{ width: "100%", height: "35vh" }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+        Sir Ratan Tata Fund offers excellent opportunities for students without worrying about monetary difficulties. Sir Ratan Tata Scholarship is exclusively for Indians are who looking for a year master's course at the University of Liverpool. The scholarship covers the tuition fees and living expenses of the selected students. The scholarship is given only once.
         </Typography>
       </CardContent>
     </Card>

@@ -1,22 +1,23 @@
 
-import { styled } from "@mui/system";
-import { Colors } from "../theme";
-import {Button,IconButton,Box} from "@mui/material";
-import { slideInBottom,slideInRight } from "../../animation";
+// import { styled } from "@mui/system";
+// import { Colors } from "../theme";
+// import {Button,IconButton,Box} from "@mui/material";
+// import { slideInBottom,slideInRight } from "../../animation";
 
 
-export const Product = styled(Box)(({theme}) => ({
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    felxDirection: 'column',
-    border:'none',
-    boxShadow:'none',
-    [theme.breakpoints.up('md')]: {
-        position: 'absolute'
-    }
-}));
+// export const Product = styled(Box)(({theme}) => ({
+//     display: 'flex',
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     felxDirection: 'column',
+//     border:'none',
+//     boxShadow:'none',
+//     [theme.breakpoints.up('md')]: {
+//         position: 'absolute'
+//     }
+// }));
  
+<<<<<<< Updated upstream
 export const ProductImage = styled('img')(({src,theme}) => ({
     src: `url($(src))`,
     width: '100%',
@@ -29,11 +30,24 @@ export const ProductImage = styled('img')(({src,theme}) => ({
         // padding: '24px'
     }
 }));
+=======
+// export const ProductImage = styled('img')(({src,theme}) => ({
+//     src: `url($(src))`,
+//     width: '100%',
+//     // background: Colors.light,
+//      padding: '5px',
+//     [theme.breakpoints.down('md')]: {
+//         width: '120%',
+//         // height:'100%'
+//         padding: '24px'
+//     }
+// }));
+>>>>>>> Stashed changes
 
-export const ProductActionButton = styled(IconButton)(() => ({
-    // background: <Colors className="grey"></Colors>,
-    margin: 4,
-}));
+// export const ProductActionButton = styled(IconButton)(() => ({
+//     // background: <Colors className="grey"></Colors>,
+//     margin: 4,
+// }));
 
 // export const ProductFavButton = styled(ProductActionButton)(({ isfav,theme}) => ({
 //   color: isfav ? Colors.primary : Colors.light,
