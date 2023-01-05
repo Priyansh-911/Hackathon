@@ -1,16 +1,21 @@
 import { ListItemButton, ListItemText, ListItemIcon } from "@mui/material";
 import { AppbarContainer, AppbarHeader, MyList } from "../../styles/appbar";
 import Actions from "./actions";
+import { useNavigate } from "react-router-dom";
 
 export default function AppbarDesktop ({ matches }) {
-
+    let navigate=useNavigate();
    
     return (
         
         <AppbarContainer>
             <AppbarHeader>Scholastic</AppbarHeader>
             <MyList type = "row">
-                <ListItemButton>
+                <ListItemButton
+                onClick={() =>{
+                    navigate("/");
+                }}
+                >
                 <ListItemText primary="Home"/>
                 </ListItemButton>
 

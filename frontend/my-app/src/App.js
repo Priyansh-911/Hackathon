@@ -12,6 +12,7 @@ import Home from './Home';
 import { UIProvider } from './component/context';
 import Student from './dashboard/Student';
 import Donor from './dashboard/Donor';
+import Info from './dashboard/Info';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route path="/register" element={<SignInOutContainer/>}/>
             <Route path='/dashboard/student' element={<Student/>}/>
             <Route path='/dashboard/donor' element={<Donor/>}/>
+            <Route path='/dashboard/student/info' element={<Info/>}/>
           </Routes>
         
 
