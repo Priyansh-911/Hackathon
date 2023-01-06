@@ -23,8 +23,8 @@ const Signup=()=>{
 
     const paperStyle={padding:20, width:350 , margin:"0 auto"}
     const headerStyle={margin:0}
-    const avatarStyle={backgroundColor:'rgb(8 154 214)'}
-    const btnstyle={margin:"10px 0"}
+    const avatarStyle={backgroundColor:"#ffde59"}
+    const btnstyle={margin:"10px 0", backgroundColor:"#ffde59"}
     const marginTop={marginTop: 5}
     const states = [
         {
@@ -100,7 +100,7 @@ const Signup=()=>{
                         ))}
                     </TextField>
                     <TextField label="Password" type="password" margin="dense" value={pass} onChange={(e)=> setPass(e.target.value)} fullWidth/>
-                    <Button type='submit' color='info' variant='contained' onClick={collectData} style={btnstyle} fullWidth>Sign Up</Button>
+                    <Button type='submit'  variant='contained' onClick={collectData} style={btnstyle} fullWidth>Sign Up</Button>
                 </form>
             </Paper>
         </Grid>

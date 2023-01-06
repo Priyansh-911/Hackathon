@@ -8,8 +8,8 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 const Login=({handleChange})=>{
 
     const paperStyle={padding :20, height : '79.25vh', width: 350, margin : "0 auto"}
-    const avatarStyle={backgroundColor:"rgb(8 154 214)"}
-    const btnstyle={margin:"10px 0"}
+    const avatarStyle={backgroundColor:"#ffde59"}
+    const btnstyle={margin:"10px 0",backgroundColor:"#ffde59"}
     return(
         <Grid> 
             <Paper  style={paperStyle}>
@@ -25,7 +25,7 @@ const Login=({handleChange})=>{
                     }
                     label="Remember me"
                 />
-                <Button type='submit' color='info' variant='contained' style={btnstyle} fullWidth>Sign In</Button>
+                <Button type='submit'  variant='contained' style={btnstyle} fullWidth>Sign In</Button>
                 <Typography>
                     <Link href='#' color="rgb(8 154 214)">
                     Forgot Password ?
