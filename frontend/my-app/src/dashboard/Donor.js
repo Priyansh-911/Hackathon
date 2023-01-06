@@ -5,6 +5,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { useNavigate } from "react-router-dom";
 
 import ViewListIcon from '@mui/icons-material/ViewList';
+import Footer from '../component/footer';
 
 
 const Donor = () => {
@@ -33,6 +34,7 @@ const Donor = () => {
          />
         
          </Box>
+         <Footer/>
         </div>
          </main>
   )
