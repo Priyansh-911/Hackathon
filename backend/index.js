@@ -19,9 +19,10 @@ app.get("/register", async (req, res) => {
 });
 
 app.post("/register", async (req, res) => {
-  res.status(200).send("progress");
   let user = new Users(req.body);
   let result = user.save();
+  res.status(200).send("progress");
+  console.log(req.body);
 });
 
 app.get("/dashboard" , async (req,res)=> {

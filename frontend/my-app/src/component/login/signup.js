@@ -67,8 +67,8 @@ const Signup=()=>{
                     <h2 style={headerStyle}>Sign up</h2>
                     <Typography variant="caption">Please fill this form to create an account!</Typography>
                 </Grid>
-                <form id="signup">
-                    <TextField label="Name" margin="dense" value={name} onChange={(e)=>setName(e.target.value)} fullWidth/>
+                <form id="signup" method="post" action="http://localhost:4500/register" >
+                    <TextField label="Name" for="name" margin="dense" value={name} onChange={(e)=>setName(e.target.value)} fullWidth/>
                     <TextField label="E-mail" margin="dense" value={email} onChange={(e)=>setEmail(e.target.value)} fullWidth/>
                     <FormControl style={marginTop}>
                         <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
