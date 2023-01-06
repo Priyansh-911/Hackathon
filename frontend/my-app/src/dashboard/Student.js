@@ -1,32 +1,40 @@
-import {  Box,Button, Card, CardContent, CardMedia,CardActions, Container,Grid,Typography ,TextField} from '@mui/material'
-import React, { useEffect, useState } from 'react'
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  CardMedia,
+  CardActions,
+  Container,
+  Grid,
+  Typography,
+  TextField,
+} from "@mui/material";
+import React, { useEffect, useState } from "react";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useNavigate } from "react-router-dom";
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import Footer from '../component/footer';
+import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import Footer from "../component/footer";
 
-function Student()  {
-
-
-  const [comment,setComment] = useState("");
+function Student() {
+  const [comment, setComment] = useState("");
 
   const data = async () => {
-    // console.warn(comment);
-    let result = await fetch('http://localhost:3000/dashboard/student', {
-      method:'post',
-      body : JSON.stringify({comment}),
-      headers:{
-        'Content-Type':'text/json'
+    console.warn(comment);
+    let result = await fetch("http://localhost:3000/dashboard/student", {
+      method: "POST",
+      body: JSON.stringify(comment),
+      headers: {
+        "Content-Type": "application/json",
       },
     });
-    result = result.json();
+    result = await result.json();
     console.warn(result);
-  }
+  };
 
-
-  let navigate=useNavigate();
-  const btnstyle={margin:"10px 0"}
-  const [scholarships,setscholarships]=useState("");
+  let navigate = useNavigate();
+  const btnstyle = { margin: "10px 0" };
+  const [scholarships, setscholarships] = useState("");
 
   /*useEffect(()=>{
     const fetchdata = async () => {
@@ -40,33 +48,47 @@ function Student()  {
     <main>
       <div>
         <Box padding={5}>
-        <Button color='secondary' size='large' 
-              onClick={() =>{
-                  navigate("/dashboard/student/info");
-              }}>
-              <AccountCircleIcon fontSize='large'/>
-              <Typography variant='h4' >Welcome back!!</Typography>
-            </Button>
+          <Button
+            color="secondary"
+            size="large"
+            onClick={() => {
+              navigate("/dashboard/student/info");
+            }}
+          >
+            <AccountCircleIcon fontSize="large" />
+            <Typography variant="h4">Welcome back!!</Typography>
+          </Button>
         </Box>
-            
+
         <Box padding={10} margin={5}>
-        <Typography variant='h4'><HelpOutlineIcon/>Ask for help</Typography> 
-        <TextField
-          id="outlined-multiline-static"
-          label="Type here"
-          multiline
-          rows={5}
-          value = {comment}
-          onChange = {(e)=> setComment(e.target.value)}
-          margin="dense"
-          fullWidth
-        />
-        <Button type='submit' color='info' variant='contained' style={btnstyle} onClick={data} >Submit</Button>
+          <Typography variant="h4">
+            <HelpOutlineIcon />
+            Ask for help
+          </Typography>
+          <TextField
+            id="outlined-multiline-static"
+            label="Type here"
+            multiline
+            rows={5}
+            value={comment}
+            onChange={(e)=>setComment(e.target.value)}
+            margin="dense"
+            fullWidth
+          />
+          <Button
+            type="submit"
+            color="info"
+            variant="contained"
+            style={btnstyle}
+            onClick={data}
+          >
+            Submit
+          </Button>
         </Box>
-        <Footer/>
+        <Footer />
       </div>
     </main>
-  )
+  );
 }
 /*<Container maxWidth="md">
              <Grid container spacing={4}>

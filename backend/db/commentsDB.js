@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 // Note to lakshay == isko apni table ke hisaab se edit krlio theseee things should match the ones in table
 var Schema= mongoose.Schema;
 const commentSchema = new Schema({
-    comment:String
+    Comment : String
 });
 
 
