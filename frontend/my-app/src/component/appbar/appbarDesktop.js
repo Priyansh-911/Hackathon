@@ -1,4 +1,4 @@
-import { ListItemButton, ListItemText, ListItemIcon } from "@mui/material";
+import { ListItemButton, ListItemText, ListItemIcon,Typography } from "@mui/material";
 import { AppbarContainer, AppbarHeader, MyList } from "../../styles/appbar";
 import Actions from "./actions";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +9,7 @@ export default function AppbarDesktop ({ matches }) {
     return (
         
         <AppbarContainer>
-            <AppbarHeader>Scholastic</AppbarHeader>
+            <AppbarHeader><Typography variant="h3">अनुदान</Typography></AppbarHeader>
             <MyList type = "row">
                 <ListItemButton
                 onClick={() =>{
