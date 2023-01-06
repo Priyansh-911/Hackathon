@@ -24,6 +24,10 @@ app.post("/register", async (req, res) => {
   let result = user.save();
 });
 
+app.get("/dashboard" , async (req,res)=> {
+    res.status(200).send("Running");
+});
+
 app.post("/dashboard/student", async (req, res) => {
   res.status(200).send("in progress......");
   let comment = new commentDB(req.body);
@@ -41,4 +45,4 @@ app.post("/dashboard/student", async (req, res) => {
 //     });
 //   });
 
-app.listen(3000);
+app.listen(4500);

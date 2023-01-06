@@ -21,8 +21,8 @@ function Student() {
 
   const data = async () => {
     console.warn(comment);
-    let result = await fetch("http://localhost:3000/dashboard/student", {
-      method: "POST",
+    let result = await fetch("http://localhost:4500/dashboard/student", {
+      method: "post",
       body: JSON.stringify(comment),
       headers: {
         "Content-Type": "application/json",
@@ -71,7 +71,7 @@ function Student() {
             multiline
             rows={5}
             value={comment}
-            onChange={(e)=>setComment(e.target.value)}
+            onChange={(e) => setComment(e.target.value)}
             margin="dense"
             fullWidth
           />
