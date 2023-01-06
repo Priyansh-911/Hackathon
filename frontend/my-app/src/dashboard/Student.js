@@ -23,7 +23,7 @@ function Student() {
     console.warn(comment);
     let result = await fetch("http://localhost:4500/dashboard/student", {
       method: "post",
-      body: JSON.stringify(comment),
+      body: JSON.stringify({comment}),
       headers: {
         "Content-Type": "application/json",
       },

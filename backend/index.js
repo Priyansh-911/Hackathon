@@ -29,7 +29,7 @@ app.get("/dashboard" , async (req,res)=> {
 });
 
 app.post("/dashboard/student", async (req, res) => {
-  res.status(200).send("in progress......");
+  // res.status(200).send("progress......");
   let comment = new commentDB(req.body);
   let resultss = comment.save();
   console.log(resultss);

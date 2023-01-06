@@ -15,9 +15,18 @@ const Signup=()=>{
     const [Value, setValue] = useState("");
     const [pass, setPass] = useState("");
 
-    const collectData=()=>{
+    const collectData= async ()=>{
         console.warn(name,email,pass);
-    }
+        let result = await fetch("http://localhost:4500/register" , {
+            method: "post",
+            body: JSON.stringify({name,email,pass}),
+            header: {
+                "Content-Type": "application/json",
+            },
+        });
+        result = await result.json();
+        console.warn(result);
+    };
 
 
 
@@ -94,7 +103,7 @@ const Signup=()=>{
                         fullWidth
                     >
                         {states.map((option) => (
-                            <MenuItem key={option.value} value={option.label}  >
+                            <MenuItem key={option.value} value={option.label} >
                                 {option.label}
                             </MenuItem>
                         ))}
