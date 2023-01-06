@@ -56,9 +56,9 @@ export default function Products() {
         <Container>
             <h1>Popular Scholarships</h1>
             <Grid
-            container spacing={2}
+            container spacing={6}
            justifyContent={"center"}
-           marginBottom={4}
+           marginBottom={6}
             // sx={{margin: '0px 0px 0px '}}
             >
              <Grid item xs={4}>
@@ -117,8 +117,8 @@ export default function Products() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
        
       <Grid
-            container spacing={2}
-            marginBottom={4}
+            container spacing={6}
+            marginBottom={6}
            // justifyContent={"center"}
             // sx={{margin: '1px 2px 10px '}}
             >
@@ -181,7 +181,7 @@ export default function Products() {
          <Collapse in={expanded}  timeout="auto" unmountOnExit>
        
       <Grid
-            container spacing={2}
+            container spacing={6}
            // justifyContent={"center"}
             // sx={{margin: '1px 2px 10px '}}
             >

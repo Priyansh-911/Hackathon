@@ -10,7 +10,7 @@ export default function Banner() {
 
     return(
         <BannerContainer>
-            <BannerImage src="/image/banner/dpp.png"/>
+            <BannerImage src="/image/banner/scc.png"/>
              {/* <BannerContent>
                 
 
