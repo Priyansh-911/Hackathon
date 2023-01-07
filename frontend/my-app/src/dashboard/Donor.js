@@ -9,12 +9,13 @@ import Footer from '../component/footer';
 
 
 const Donor = () => {
+  const btnstyle = { width:"30%" };
   return (
     <main>
 
     <div>
     <Box padding={5}>
-        <Button color='secondary' size='large' >
+        <Button color='secondary' size='large' style={btnstyle} >
               
               <AccountCircleIcon fontSize='large'/>
               <Typography variant='h4' >Welcome back!!</Typography>

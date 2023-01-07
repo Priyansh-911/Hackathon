@@ -4,9 +4,11 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import "./signup.css";
+import { useNavigate } from "react-router-dom";
 
 
 const Login=({handleChange})=>{
+    let navigate=useNavigate();
 
     const paperStyle={padding :20, height : '79.25vh', width: 350, margin : "0 auto"}
     const avatarStyle={backgroundColor:"#ffde59"}
@@ -26,7 +28,7 @@ const Login=({handleChange})=>{
               
           </div>
           <div class="footer">
-              <button type="submit" class="btn">Login</button>
+              <button type="submit" class="btn" onClick={()=>{navigate("/dashboard/student")}}>Login</button>
           </div>
       </div>
     )

@@ -33,7 +33,8 @@ function Student() {
   };
 
   let navigate = useNavigate();
-  const btnstyle = { margin: "10px 0" };
+  const btstyle={width:"30%"};
+  const btnstyle = { margin: "10px 0", width:"10%" };
   const [scholarships, setscholarships] = useState("");
 
   /*useEffect(()=>{
@@ -49,6 +50,7 @@ function Student() {
       <div>
         <Box padding={5}>
           <Button
+            style={btstyle}
             color="secondary"
             size="large"
             onClick={() => {

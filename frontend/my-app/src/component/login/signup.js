@@ -16,8 +16,10 @@ import React, { useState, setState } from "react";
 import "./signup.css";
 import {ref,push,child,update} from "firebase/database";
 import {database} from '../../firebase';
+import { useNavigate } from "react-router-dom";
 
 function RegistrationForm() {
+  let navigate=useNavigate();
   // const Signup=()=>{
   //     const [name, setName] = useState("");
   //     const [email, setEmail] = useState("");
