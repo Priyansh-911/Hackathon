@@ -1,19 +1,18 @@
-import {
-  Avatar,
-  Button,
-  Grid,
-  Paper,
-  TextField,
-  Typography,
-} from "@mui/material";
+// import {
+//   Avatar,
+//   Button,
+//   Grid,
+//   Paper,
+//   TextField,
+// } from "@mui/material";
 import React, { useState, setState } from "react";
-import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
-import MenuItem from "@mui/material/MenuItem";
+// import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+// import Radio from "@mui/material/Radio";
+// import RadioGroup from "@mui/material/RadioGroup";
+// import FormControlLabel from "@mui/material/FormControlLabel";
+// import FormControl from "@mui/material/FormControl";
+// import FormLabel from "@mui/material/FormLabel";
+// import MenuItem from "@mui/material/MenuItem";
 import "./signup.css";
 import {ref,push,child,update} from "firebase/database";
 import {database} from '../../firebase';
@@ -82,8 +81,11 @@ function RegistrationForm() {
       setEmail(value);
     }
 
-    if (id === "choice"){
-      setChoice(value);
+    if (id === "Donor"){
+      setChoice("Donor");
+    }
+    if (id === "Student"){
+      setChoice("Student");
     }
     if (id === "password") {
       setPassword(value);
@@ -100,13 +102,14 @@ function RegistrationForm() {
     const newPostKey = push(child(ref(database), "posts")).key;
     const updates = {};
     updates["/" + newPostKey] = obj;
+    // window.location.href="/dashboard/student";
     return update(ref(database), updates);
   };
   return (
-    <div className="form" method="get">
+    <div className="form" method="post" action="/dashboard/student">
       <div className="form-body">
         <div className="username">
-          <label className="form__label" for="Name">
+          <label className="form__label" htmlfor="Name">
             Name{" "}
           </label>
           <input
@@ -114,10 +117,12 @@ function RegistrationForm() {
             type="text"
             id="Name"
             placeholder=" Name"
+            value={Name} 
+            onChange = {(e) => handleInputChange(e)}
           />
         </div>
         <div className="email">
-          <label className="form__label" for="email">
+          <label className="form__label" htmlfor="email">
             Email{" "}
           </label>
           <input
@@ -125,20 +130,22 @@ function RegistrationForm() {
             id="email"
             className="form__input"
             placeholder="Email"
+            value={email} 
+            onChange = {(e) => handleInputChange(e)}
           />
         </div>
 
         <p>Are you a donor or a student?</p>
-        <input type="radio" id="donor" name="choice" value="donor"></input>
-        <label for="donor">Donor{" "}</label>
+        <input type="radio" id="Donor" name="choice" value="donor" onChange = {(e) => handleInputChange(e)} ></input>
+        <label htmlfor="donor">Donor{" "}</label>
         <br></br>
 
-        <input type="radio" id="student" name="choice" value="student"></input>
-        <label for="student">Student{" "}</label>
+        <input type="radio" id="Student" name="choice" value="student" onChange = {(e) => handleInputChange(e)}></input>
+        <label htmlfor="student">Student{" "}</label>
         <br></br>
 
         <div className="password">
-          <label className="form__label" for="password">
+          <label className="form__label" htmlfor="password">
             Password{" "}
           </label>
           <input
@@ -146,11 +153,13 @@ function RegistrationForm() {
             type="password"
             id="password"
             placeholder="Password"
+            value={password}
+            onChange = {(e) => handleInputChange(e)}
           />
         </div>
       </div>
       <div class="footer">
-        <button onClick={() => handleSubmit()} type="submit" class="btn">
+        <button onClick={() => handleSubmit()} type="submit" class="btn" >
           Register
         </button>
       </div>
