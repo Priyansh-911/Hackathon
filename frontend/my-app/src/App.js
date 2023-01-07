@@ -12,14 +12,14 @@ import Home from './Home';
 import { UIProvider } from './component/context';
 import Student from './dashboard/Student';
 import Donor from './dashboard/Donor';
-import Info from './dashboard/Info';
+import Info from './dashboard/Form/Info';
 
 
 
 function App() {
 
   useEffect(() => {
-    document.title = "React Material UI - Home";
+    document.title = "Anudan";
   }, []);
   return (
     <Router>
