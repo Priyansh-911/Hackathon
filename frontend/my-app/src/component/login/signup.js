@@ -7,6 +7,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import MenuItem from '@mui/material/MenuItem';
+import './signup.css';
 
 const Signup=()=>{
     const [name, setName] = useState("");
@@ -58,61 +59,33 @@ const Signup=()=>{
         },
       ];
     return(
-        <Grid>
-            <Paper  style={paperStyle}>
-                <Grid align='center'>
-                    <Avatar style={avatarStyle}>
-                    <AddCircleOutlineIcon/> 
-                    </Avatar>
-                    <h2 style={headerStyle}>Sign up</h2>
-                    <Typography variant="caption">Please fill this form to create an account!</Typography>
-                </Grid>
-                <form id="signup" method="post" action="http://localhost:4500/register" >
-                    <TextField label="Name" for="name" margin="dense" value={name} onChange={(e)=>setName(e.target.value)} fullWidth/>
-                    <TextField label="E-mail" margin="dense" value={email} onChange={(e)=>setEmail(e.target.value)} fullWidth/>
-                    <FormControl style={marginTop}>
-                        <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
-                        <RadioGroup
-                            aria-labelledby="demo-radio-buttons-group-label"
-                            name="radio-buttons-group"
-                            style={{display:"initial"}}
-                        >
-                            <FormControlLabel value="female" control={<Radio />} label="Female" />
-                            <FormControlLabel value="male" control={<Radio />} label="Male" />
-                            <FormControlLabel value="other" control={<Radio />} label="Other" />
-                        </RadioGroup>
-                    </FormControl>
-                    <FormControl style={marginTop}>
-                        <FormLabel id="demo-radio-buttons-group-label">Are you a donor or student?</FormLabel>
-                        <RadioGroup
-                            aria-labelledby="demo-radio-buttons-group-label"
-                            name="radio-buttons-group"
-                            style={{display:"initial"}}
-                        >
-                            <FormControlLabel value="donor" control={<Radio />} label="Donor" />
-                            <FormControlLabel value="student" control={<Radio />} label="Student" />
-                        </RadioGroup>
-                    </FormControl>
-                    <TextField 
-                        id="outlined-select-state"
-                        select
-                        label="Select"
-                        helperText="Please select your state"
-                        margin="dense"
-                        
-                        fullWidth
-                    >
-                        {states.map((option) => (
-                            <MenuItem key={option.value} value={option.label} >
-                                {option.label}
-                            </MenuItem>
-                        ))}
-                    </TextField>
-                    <TextField label="Password" type="password" margin="dense" value={pass} onChange={(e)=> setPass(e.target.value)} fullWidth/>
-                    <Button type='submit'  variant='contained' onClick={collectData} style={btnstyle} fullWidth>Sign Up</Button>
-                </form>
-            </Paper>
-        </Grid>
+        <div className="form">
+          <div className="form-body">
+              <div className="username">
+                  <label className="form__label" for="Name">Name </label>
+                  <input className="form__input" type="text" id="Name" placeholder=" Name"/>
+              </div>
+              <div className="email">
+                  <label className="form__label" for="email">Email </label>
+                  <input  type="email" id="email" className="form__input" placeholder="Email"/>
+              </div>
+              
+              <p>Are you a donor or a student?</p>
+<input type="radio" id="donor" name="donor" value="donor"></input>
+<label for="donor">Donor</label><br></br>
+
+<input type="radio" id="student" name="donor" value="student"></input>
+<label for="student">Student</label><br></br>
+           
+              <div className="password">
+                  <label className="form__label" for="password">Password </label>
+                  <input className="form__input" type="password"  id="password" placeholder="Password"/>
+              </div>
+          </div>
+          <div class="footer">
+              <button type="submit" class="btn">Register</button>
+          </div>
+      </div>
     )
 }
 

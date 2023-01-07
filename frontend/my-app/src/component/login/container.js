@@ -6,7 +6,7 @@ import Login from "./signin";
 import Signup from "./signup";
 
 const SignInOutContainer=()=>{
-    const paperStyle={width:390, margin:"20px auto"}
+    const paperStyle={width:590, margin:"20px auto"}
     const [value,setValue]=useState(0)
     const handleChange = (event, newValue) => {
         setValue(newValue);
