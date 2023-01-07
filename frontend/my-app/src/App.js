@@ -15,6 +15,7 @@ import Donor from './dashboard/Donor';
 import Info from './dashboard/Info';
 
 
+
 function App() {
 
   useEffect(() => {
@@ -36,9 +37,10 @@ function App() {
           
         
         </Container>
+      
       </ThemeProvider>
       
-        
+     
           
           <Routes>
             <Route path='/' element={<Home/>}/>
@@ -46,6 +48,7 @@ function App() {
             <Route path='/dashboard/student' element={<Student/>}/>
             <Route path='/dashboard/donor' element={<Donor/>}/>
             <Route path='/dashboard/student/info' element={<Info/>}/>
+            <Route path='/register/signup' element={<Info/>}/>
           </Routes>
         
 
